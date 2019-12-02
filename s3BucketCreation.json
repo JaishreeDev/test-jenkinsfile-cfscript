@@ -1,0 +1,97 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "d2708f40-a16c-42ba-b3d4-a9b02a544da1": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 172.00570678710938,
+                    "y": 55.017051696777344
+                },
+                "z": 0
+            },
+            "72ceeaff-0e98-4e83-8a3d-d92b7a07bdf9": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 258.0057067871094,
+                    "y": 65.01705169677734
+                },
+                "z": 0
+            },
+            "e901ebc4-3d3c-4ebb-b0e3-14eeaafd84e2": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 338.0057067871094,
+                    "y": 73.01705169677734
+                },
+                "z": 0
+            },
+            "f1f98239-1be2-45fc-b575-8883be41146a": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 415.0057067871094,
+                    "y": 87.01705169677734
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "S3BucketRaw": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": "Analytics-Paperboy-Raw-LZ-UAT"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "d2708f40-a16c-42ba-b3d4-a9b02a544da1"
+                }
+            }
+        },
+        "S3BucketEnhanced": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": "Analytics-Paperboy-Enhanced-LZ-UAT"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "72ceeaff-0e98-4e83-8a3d-d92b7a07bdf9"
+                }
+            }
+        },
+        "S3BucketFinal": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": "Analytics-Paperboy-Final-LZ-UAT"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "e901ebc4-3d3c-4ebb-b0e3-14eeaafd84e2"
+                }
+            }
+        },
+        "S3BucketArtifacts": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": "Analytics-Paperboy-Artifacts-DEV"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f1f98239-1be2-45fc-b575-8883be41146a"
+                }
+            }
+        }
+    }
+}

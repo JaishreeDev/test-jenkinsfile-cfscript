@@ -13,7 +13,7 @@ pipeline {
             echo 'Hello World'
             //bat '%AWS_CLI_PATH%'
             bat "%AWS_CLI_PATH% configure list"
-            bat "%AWS_CLI_PATH% cloudformation create-stack --stack-name S3BucketStack --template-body file:\${workspace}\s3BucketCreation.json"
+            bat "%AWS_CLI_PATH% cloudformation create-stack --stack-name S3BucketStack --template-body file:\\${workspace}\\s3BucketCreation.json"
          }
       }
 
